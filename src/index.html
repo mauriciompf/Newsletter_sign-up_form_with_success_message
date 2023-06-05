@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="../dist/output.css">  
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+  </style>
+</head>
+<body class="font-roboto-regular">
+  <main class="h-screen lg:grid lg:place-items-center lg:bg-neutral-dark-slate-grey">
+    <div class="flex flex-col lg:w-9/12 lg:flex-row lg:gap-5 lg:bg-neutral-white lg:p-4 lg:rounded-2xl">
+      <!-- Sign-up form start -->
+      <div class="w-10/12 m-auto lg:m-0 order-2 lg:order-1 lg:py-6 lg:pl-6">
+        <h1 class="text-4xl md:text-5xl font-bold pb-3 pt-4">Stay updated!</h1>
+        <p class="">
+          Join 60,000+ product managers receiving monthly updates on:
+        </p>
+        <ul class="pt-4 pb-5">
+          <li class="flex gap-4 mb-1 items-start">
+            <img src="./assets/images/icon-list.svg" alt="">Product discovery and building what matters</li>
+          <li class="flex gap-4 mb-1 items-start"><img src="./assets/images/icon-list.svg" alt="">
+            Measuring to ensure updates are a success</li>
+          <li class="m flex gap-4"><img src="./assets/images/icon-list.svg" alt="">
+            And much more!</li>
+        </ul>
+        <form class="">
+          <label class="block font-bold text-xs mb-2" for="em">Email address</label>
+          <input 
+            class="rounded-lg w-full mb-4 border border-neutral-grey py-3 px-6"
+            type="email"
+            id="em"
+            required
+            arial-label="Enter your email..."
+            pattern="[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?"
+            placeholder="email@company.com">
+          <button class="mb-3 rounded-lg w-full block text-neutral-white font-bold bg-neutral-dark-slate-grey py-3" id="submit-btn" type="submit">
+            Subscribe to monthly newsletter
+          </button>
+        </form>
+      </div>
+
+      <!-- Sign-up form end -->
+
+      <div class="h-64 lg:h-auto lg:order-2">
+        <img class="rounded-b-2xl lg:rounded-2xl h-full w-full object-cover" src="./assets/images/illustration-sign-up-mobile.svg" alt="Illustration">
+      </div>
+
+      <!-- Success message start -->
+
+      <article class="hidden" id="thanks-card">
+        <h1>Thanks for subscribing!</h1>
+        <p>
+          A confirmation email has been sent to ash@loremcompany.com. Please open it and click the button inside to confirm your subscription. 
+        </p>
+        <button type="button">
+          Dismiss message
+        </button>
+      </article>
+
+      <!-- Success message end -->
+    
+    </div>
+  </main>
+<!--   
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+</body>
+</html>
